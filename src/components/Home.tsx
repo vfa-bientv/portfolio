@@ -13,8 +13,8 @@ export default function Home(props: HomeProps) {
 				<span>dignissimos animi ratione debitis quaerat</span>
 				<span>laborum blanditiis nostrum aliquid dolor </span>
 				<span>officiis expedita temporibus </span>
-				<span> molestias ut oluptates dolores!</span>
-				<span> Porro eveniet soluta quis qui.</span>
+				<span>molestias ut oluptates dolores!</span>
+				<span>Porro eveniet soluta quis qui.</span>
 			</p>
 		</section>
 	);
