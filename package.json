@@ -32,8 +32,6 @@
 		"eslint-plugin-promise": "^6.0.0",
 		"eslint-plugin-react": "^7.32.2",
 		"gh-pages": "^5.0.0",
-		"husky": ">=6",
-		"lint-staged": ">=10",
 		"postcss": "^8.4.21",
 		"prettier": "^2.8.4",
 		"sass": "^1.58.3",
