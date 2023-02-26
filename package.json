@@ -42,16 +42,5 @@
 		"vite": "^4.1.0"
 	},
 	"main": "index.js",
-	"license": "MIT",
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"src/**/*.{js,jsx,ts,tsx}": [
-			"yarn lint",
-			"yarn format"
-		]
-	}
+	"license": "MIT"
 }

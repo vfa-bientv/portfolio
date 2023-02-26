@@ -5,7 +5,6 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import Home from './components/Home';
-import Partner from './components/Partner';
 
 function App() {
 	const [isHidden, setIsHidden] = useState<boolean>(false);
