@@ -42,7 +42,6 @@ function App() {
 				<span>R</span>
 				<span>E</span>
 				<span>M</span>
-				
 			</h1>
 			<div
 				className={classNames('h-full w-full ', {
