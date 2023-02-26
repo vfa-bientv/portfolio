@@ -1,15 +1,17 @@
 {
 	"name": "security",
 	"private": true,
-	"version": "0.0.0",
-	"homepage": "http://baovecentral.com/",
+	"version": "0.0.1",
+	"homepage": "https://vfa-bientv.github.io/portfolio",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
 		"lint": "eslint . --fix --max-warnings=0",
 		"format": "prettier . --write",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"predeploy": "yarn run build",
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"classnames": "^2.3.2",
@@ -29,6 +31,7 @@
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-promise": "^6.0.0",
 		"eslint-plugin-react": "^7.32.2",
+		"gh-pages": "^5.0.0",
 		"husky": ">=6",
 		"lint-staged": ">=10",
 		"postcss": "^8.4.21",
