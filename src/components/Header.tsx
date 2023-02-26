@@ -15,28 +15,19 @@ export default function Header({}: Props) {
 					<li className={classNames({ selected: location.pathname === '/' })}>
 						<div className="dot">●</div>
 						<Link to="/" className="text">
-							Trang Chủ
+							Home
 						</Link>
 					</li>
 					<li
 						className={classNames({
-							selected: location.pathname === '/partner',
+							selected: location.pathname === '/project',
 						})}
 					>
 						<div className="dot">●</div>
-						<Link to="/partner" className="text">
-							Đối tác
+						<Link to="/Project" className="text">
+							Project
 						</Link>
 					</li>
-					<li
-						className={classNames({ selected: location.pathname === '/about' })}
-					>
-						<div className="dot">●</div>
-						<Link to="/about" className="text">
-							Thông tin
-						</Link>
-					</li>
-
 					<li
 						className={classNames({
 							selected: location.pathname === '/contact',
@@ -44,7 +35,7 @@ export default function Header({}: Props) {
 					>
 						<div className="dot">●</div>
 						<Link to="/contact" className="text">
-							Liên hệ
+							Contact{' '}
 						</Link>
 					</li>
 				</ol>

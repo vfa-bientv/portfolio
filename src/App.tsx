@@ -38,20 +38,12 @@ function App() {
 					color: '#fff',
 				})}
 			>
-				<span>C</span>
-				<span>E</span>
-				<span>N</span>
-				<span>T</span>
+				<span>L</span>
+				<span>O</span>
 				<span>R</span>
-				<span>A</span>
-				<span>L</span> <span>S</span>
 				<span>E</span>
-				<span>C</span>
-				<span>U</span>
-				<span>R</span>
-				<span>I</span>
-				<span>T</span>
-				<span>Y</span>
+				<span>M</span>
+				
 			</h1>
 			<div
 				className={classNames('h-full w-full ', {
@@ -63,8 +55,7 @@ function App() {
 
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/partner" element={<Partner />} />
+					<Route path="/project" element={<About />} />
 					<Route path="/contact" element={<Contact />} />
 				</Routes>
 			</div>
