@@ -5,6 +5,7 @@ on:
     branches:
       - main
 
+
 jobs:
   test_and_preview:
     name: Test and Preview
@@ -30,6 +31,14 @@ jobs:
           fi
 
           yarn install --frozen-lockfile
+
+      - name: Run tests
+        run: |
+          yarn format
+          yarn lint
+
+          # TODO: enable component tests when they can be run reliably
+          # yarn test
 
       - name: Build
         run: yarn build
