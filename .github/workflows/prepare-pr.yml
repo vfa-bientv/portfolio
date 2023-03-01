@@ -1,0 +1,36 @@
+name: Prepare PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test_and_preview:
+    name: Test and Preview
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use Node 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Check & install packages
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          FORBIDDEN_LOCKFILE=package-lock.json
+          if [ -f $FORBIDDEN_LOCKFILE ]
+          then
+            echo "$FORBIDDEN_LOCKFILE found (please remove it, we are using yarn!)"
+            exit 1
+          fi
+
+          yarn install --frozen-lockfile
+
+      - name: Build
+        run: yarn build
+
