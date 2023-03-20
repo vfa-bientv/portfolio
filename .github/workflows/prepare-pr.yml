@@ -37,9 +37,5 @@ jobs:
           yarn format
           yarn lint
 
-          # TODO: enable component tests when they can be run reliably
-          # yarn test
 
-      - name: Build
-        run: yarn build
 
